@@ -28,3 +28,6 @@ switch (num) {
 		console.log('Упс');
 		break;
 }
+
+
+
