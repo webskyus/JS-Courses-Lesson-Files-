@@ -24,3 +24,14 @@ let soldier = {
  console.log(john);
  console.log(john.armor);
 
+// let a,
+// 		b;
+		 
+// function arrowFunct(a, b) {
+// 	return a - b;
+// };
+
+let newFunc = (a, b) => a + b;
+
+
+console.log(newFunc(10, 7));
