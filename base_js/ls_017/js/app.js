@@ -92,7 +92,7 @@ requiredApproveBtn.addEventListener('click', function() {
 
 	for (let i = 0; i < expensesItem.length; i++) {
 		let a = expensesItem[i].value,
-			b = expensesItem[++i].value;
+				b = expensesItem[++i].value;
 
 		if ((typeof (a)) === 'string' && (typeof (a)) != null && (typeof (b)) != null && a != ''
 			&& b != '' && a.length < 50) {
