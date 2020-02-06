@@ -149,6 +149,7 @@ saving.addEventListener('input', function() {
 		appData.saving = true;
 	}
 });
+
 chooseSumValue.addEventListener('input', function() {
 	if(appData.saving == true) {
 		let sum = +chooseSumValue.value,
@@ -157,8 +158,8 @@ chooseSumValue.addEventListener('input', function() {
 		appData.monthIncome = (sum / 100 / 12 * percent).toFixed();
 		appData.yearIncome = (sum / 100  * percent).toFixed();
 
-		yearSaving.textContent = appData.yearIncome;
-		monthSaving.textContent = appData.monthIncome;
+		yearSaving.textContent = appData.yearIncome + ' ₽';
+		monthSaving.textContent = appData.monthIncome + ' ₽';
 
 	}
 });
@@ -171,8 +172,8 @@ choosePercntValue.addEventListener('input', function() {
 		appData.monthIncome = (sum / 100 / 12 * percent).toFixed();
 		appData.yearIncome = (sum / 100  * percent).toFixed();
 
-		yearSaving.textContent = appData.yearIncome;
-		monthSaving.textContent = appData.monthIncome;
+		yearSaving.textContent = appData.yearIncome  + ' ₽';
+		monthSaving.textContent = appData.monthIncome  + ' ₽';
 	}
 });
 
